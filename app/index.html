@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self';
+    script-src 'self'"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Rapid and Remote Deauthentication Drone (R2D2)</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <h1>Rapid and Remote Deauthentication Drone (R2D2)</h1>
+        <p> Welcome to R2D2, a tool used to perform a remote WiFi
+    deauthentication attack against an enemy network to render it
+    useless. Use the buttons below to scan for networks, launch an attack, or
+    view previous scan logs.
+        </p>
+      </div>
+
+      <div class="left">
+        <p>
+        Use this button to launch a scan for WiFi networks and their
+        associated devices in the area.
+        </p>
+    <button onclick="launchScanWindow()" type="button" id="scanBtn"
+    class="myButton">Scan</button>
+    </div>
+    <div class="middle">
+      <p>
+      Use this button to launch an attack on a detected WiFi network that was located during a scan.
+      </p>
+    <button onclick="launchAttackWindow()" type="button" id="attackBtn"
+      class="myButton">Attack</button>
+    </div>
+    <div class="right">
+      <p>
+      Use this button to display the logs of previous network scans.
+      </p>
+    <button onclick="launchLogsWindow()" type="button" id="logsBtn"
+      class="myButton">Logs</button>
+    </div>
+
+    <div class="footer">
+    <p>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.</p>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./index.js"></script>
+  </body>
+</html>

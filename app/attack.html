@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<link rel='stylesheet' href='./css/main.css'>
+<title>Rapid and Remote Deauthentication Drone (R2D2)</title>
+</head>
+<body>
+<div class='grid-container'>
+<div class='header'>
+<h1>Scan Results<h1></div>
+<div class='left'></div>
+<div class='middle' style='background-color: #ccc;'>
+<table>
+<tr>
+<th>ESSID</th>
+<th>BSSID</th>
+</tr>
+<tr><td>Hidden Network</td><td>90:4C:81:60:B0:72</td></tr>
+<tr><td> GNBA-F</td><td>90:4C:81:60:B0:70</td></tr>
+<tr><td> GNBA-S</td><td>90:4C:81:60:B0:71</td></tr>
+<tr><td>Hidden Network</td><td>90:4C:81:65:52:72</td></tr>
+<tr><td> GNBA-S</td><td>90:4C:81:60:74:01</td></tr>
+<tr><td> 19th Company Wardroom</td><td>74:AC:B9:2E:30:8F</td></tr>
+<tr><td> 19th Company Wardroom-Router-5G</td><td>7E:AC:B9:2E:30:8F</td></tr>
+<tr><td>Hidden Network</td><td>90:4C:81:65:52:62</td></tr>
+<tr><td> GNBA-F</td><td>90:4C:81:60:5F:C0</td></tr>
+<tr><td> 16thCompanyWardroom-guest</td><td>2A:F5:A2:ED:F9:BA</td></tr>
+<tr><td> GNBA-F</td><td>90:4C:81:60:5F:D0</td></tr>
+<tr><td> GNBA-S</td><td>90:4C:81:60:5F:D1</td></tr>
+<tr><td>Hidden Network</td><td>90:4C:81:60:5F:D2</td></tr>
+<tr><td> 16thCompanyWardroom</td><td>24:F5:A2:ED:F9:BA</td></tr>
+<tr><td>Hidden Network</td><td>78:8A:20:4C:3E:CE</td></tr>
+<tr><td> 19th Company Wardroom</td><td>74:AC:B9:2D:30:8F</td></tr>
+<tr><td> GNBA-F</td><td>90:4C:81:60:74:10</td></tr>
+<tr><td> GNBA-S</td><td>90:4C:81:60:74:11</td></tr>
+<tr><td> DIRECT-F4-HP ENVY Photo 7100</td><td>B6:B6:86:16:FC:F4</td></tr>
+<tr><td> DIRECT-JIWK2TK821004VMIDmsBM</td><td>D6:6D:6D:E5:87:BA</td></tr>
+<tr><td> 17thCoWardroom5G</td><td>A0:63:91:CA:67:47</td></tr>
+<tr><td>Hidden Network</td><td>A0:63:91:CA:67:48</td></tr>
+<tr><td> iPhone</td><td>EA:41:90:70:43:63</td></tr>
+</table><br></div>
+<div class='right'></div>
+<div class='footer'>
+<h3>Launch a Deauthentication Attack</h3>
+<p> Use the below form to launch an attack against a specified network.</p>
+<p><form id='attackForm'>
+<label for='networks'>Select a Network to attack:</label>
+<select id='networks' name='networks'>
+<option value='B6:B6:86:16:FC:F4'>B6:B6:86:16:FC:F4</option>
+<option value='90:4C:81:60:B0:72'>90:4C:81:60:B0:72</option>
+<option value='2A:F5:A2:ED:F9:BA'>2A:F5:A2:ED:F9:BA</option>
+<option value='90:4C:81:60:B0:70'>90:4C:81:60:B0:70</option>
+<option value='90:4C:81:60:B0:71'>90:4C:81:60:B0:71</option>
+<option value='D6:6D:6D:E5:87:BA'>D6:6D:6D:E5:87:BA</option>
+<option value='90:4C:81:60:5F:C0'>90:4C:81:60:5F:C0</option>
+<option value='78:8A:20:4C:3E:CE'>78:8A:20:4C:3E:CE</option>
+<option value='90:4C:81:65:52:62'>90:4C:81:65:52:62</option>
+<option value='90:4C:81:60:5F:D2'>90:4C:81:60:5F:D2</option>
+<option value='7E:AC:B9:2E:30:8F'>7E:AC:B9:2E:30:8F</option>
+<option value='90:4C:81:60:5F:D0'>90:4C:81:60:5F:D0</option>
+<option value='90:4C:81:60:5F:D1'>90:4C:81:60:5F:D1</option>
+<option value='90:4C:81:60:74:11'>90:4C:81:60:74:11</option>
+<option value='90:4C:81:60:74:10'>90:4C:81:60:74:10</option>
+<option value='74:AC:B9:2D:30:8F'>74:AC:B9:2D:30:8F</option>
+<option value='90:4C:81:60:74:01'>90:4C:81:60:74:01</option>
+<option value='74:AC:B9:2E:30:8F'>74:AC:B9:2E:30:8F</option>
+<option value='90:4C:81:65:52:72'>90:4C:81:65:52:72</option>
+<option value='A0:63:91:CA:67:47'>A0:63:91:CA:67:47</option>
+<option value='EA:41:90:70:43:63'>EA:41:90:70:43:63</option>
+<option value='A0:63:91:CA:67:48'>A0:63:91:CA:67:48</option>
+<option value='24:F5:A2:ED:F9:BA'>24:F5:A2:ED:F9:BA</option>
+</select>
+<input type='submit' value='Submit'>
+<script src='./attack.js'></script>
+</form></p></div></div><br>
